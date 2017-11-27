@@ -32,7 +32,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [WXApi registerApp:@"wxc0353065c5dc7dad"];
+    //wx76bc94cd9b0ecc22
+    [WXApi registerApp:@"wx76bc94cd9b0ecc22"];
     
     return YES;
 }

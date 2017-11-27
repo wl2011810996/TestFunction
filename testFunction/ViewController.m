@@ -19,7 +19,11 @@
 #import "IPhoneXController.h"
 #import "PhotoClipController.h"
 #import "WeiXinController.h"
-
+#import "CalanderController.h"
+#import "PictureBrowseController.h"
+#import "CarouselAndVideoController.h"
+#import "SmallWidgetController.h"
+#import "PictureSelectController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -44,6 +48,11 @@
         [_dataArray addObject:@"iPhoneX适配"];
         [_dataArray addObject:@"图片裁剪"];
         [_dataArray addObject:@"微信绑定"];
+        [_dataArray addObject:@"时间选择器"];
+        [_dataArray addObject:@"图片浏览器"];
+        [_dataArray addObject:@"视频图片轮播器"];
+         [_dataArray addObject:@"小控件测试"];
+         [_dataArray addObject:@"图片多选"];
     }
     return _dataArray;
     
@@ -136,6 +145,28 @@
         WeiXinController *weixinVC = [[WeiXinController alloc]initWithNibName:@"WeiXinController" bundle:nil];
         [self.navigationController pushViewController:weixinVC animated:YES];
         
+    }else if (indexPath.row == 8)
+    {
+        CalanderController *calanderVC = [[CalanderController alloc]initWithNibName:@"CalanderController" bundle:nil];
+        [self.navigationController pushViewController:calanderVC animated:YES];
+        
+    }else if (indexPath.row == 9)
+    {
+        PictureBrowseController *picturebrowseVC = [[PictureBrowseController alloc]initWithNibName:@"PictureBrowseController" bundle:nil];
+        [self.navigationController pushViewController:picturebrowseVC animated:YES];
+        
+    }else if (indexPath.row == 10)
+    {
+        CarouselAndVideoController *carouseAndvideoVC = [[CarouselAndVideoController alloc]initWithNibName:@"CarouselAndVideoController" bundle:nil];
+        [self.navigationController pushViewController:carouseAndvideoVC animated:YES];
+    }else if (indexPath.row == 11)
+    {
+        SmallWidgetController *smallWidgetVC = [[SmallWidgetController alloc]initWithNibName:@"SmallWidgetController" bundle:nil];
+        [self.navigationController pushViewController:smallWidgetVC animated:YES];
+    }else if (indexPath.row == 12)
+    {
+        PictureSelectController *pictureselectVC = [[PictureSelectController alloc]init];
+        [self.navigationController pushViewController:pictureselectVC animated:YES];
     }
 
 }

@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  testFunction
+//
+//  Created by 拓视 on 2017/11/24.
+//  Copyright © 2017年 拓视. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kMainScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kMainScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#endif
+

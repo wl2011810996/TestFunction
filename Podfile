@@ -16,5 +16,9 @@ pod 'MD360Player4iOS', '~> 1.0.0'
 pod 'GVRKit'
 pod 'WechatOpenSDK'
 
+pod 'PPNumberButton'
+
+#pod 'ZLPhotoBrowser'
+
 end
 
